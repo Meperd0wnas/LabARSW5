@@ -27,4 +27,4 @@ Modifique la clase BlueprintAPIController en base al ejemplo dado, la clase usa 
 
 hacemos la solicitud GET y verificamos la respuesta exitosa y la funcionalidad del filtro
 
-![alt text](image.png)
+![alt text](./img/media/image4.png)
