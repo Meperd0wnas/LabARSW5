@@ -16,21 +16,21 @@ agregamos un constructor en InMemoryBlueprintPersistence que inicialice algunos 
 
 ![alt text](./img/media/image1.png)
 
-### 3
+#### 3
 
 Modifique la clase BlueprintAPIController en base al ejemplo dado, la clase usa @RestController para exponer endpoints REST que devuelven directamente JSON, con @RequestMapping("/blueprints") se define la ruta base del recurso. A través de @Autowired se inyecta el servicio BlueprintsServices, y el método manejadorGetRecursoBlueprints() atiende las peticiones GET /blueprints devolviendo todos los planos en JSON. Finalmente, ResponseEntity permite enviar tanto los datos como el código HTTP correspondiente (200 OK en éxito o 404 en error).
 
 ![alt text](./img/media/image3.png)
 
 
-### 4
+#### 4
 
 hacemos la solicitud GET y verificamos la respuesta exitosa y la funcionalidad del filtro
 
 ![alt text](./img/media/image4.png)
 
 
-### 5 
+#### 5 
 
 creamos el nuevo endpoint:
 
@@ -41,7 +41,7 @@ lo probamos:
 ![alt text](./img/media/image6.png)
 ![alt text](./img/media/image7.png)
 
-### 6 
+#### 6 
 
 creamos el nuevo endpoint:
 
@@ -53,3 +53,9 @@ lo probamos:
 ![alt text](./img/media/image10.png)
 
 ### Parte II
+
+#### 1
+
+adicionamos el POST
+
+![alt text](./img/media/image11.png)

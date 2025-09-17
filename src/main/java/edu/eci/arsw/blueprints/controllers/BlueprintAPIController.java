@@ -57,5 +57,19 @@ public class BlueprintAPIController {
             return new ResponseEntity<>("Blueprint no encontrado", HttpStatus.NOT_FOUND);
         }
     }
+
+    // POST - crear nuevo plano
+    @PostMapping
+    public ResponseEntity<?> manejadorPostRecursoBlueprint(@RequestBody Blueprint bp) {
+        try {
+            services.addNewBlueprint(bp);
+            return new ResponseEntity<>(HttpStatus.CREATED);
+        } catch (Exception ex) {
+            Logger.getLogger(BlueprintAPIController.class.getName()).log(Level.SEVERE, null, ex);
+            return new ResponseEntity<>("Error al crear el plano", HttpStatus.FORBIDDEN);
+        }
+    }    
+
+
 }
 
