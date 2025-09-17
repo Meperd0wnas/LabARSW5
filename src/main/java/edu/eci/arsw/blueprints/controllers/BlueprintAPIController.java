@@ -28,5 +28,20 @@ public class BlueprintAPIController {
             return new ResponseEntity<>("Error al obtener los planos", HttpStatus.NOT_FOUND);
         }
     }
+
+    // Nuevo endpoint: GET /blueprints/{author}
+    @GetMapping("/{author}")
+    public ResponseEntity<?> manejadorGetBlueprintsPorAutor(@PathVariable("author") String author) {
+        try {
+            Set<Blueprint> data = services.getBlueprintsByAuthor(author);
+            if (data.isEmpty()) {
+                return new ResponseEntity<>("Autor no encontrado", HttpStatus.NOT_FOUND);
+            }
+            return new ResponseEntity<>(data, HttpStatus.OK);
+        } catch (Exception ex) {
+            Logger.getLogger(BlueprintAPIController.class.getName()).log(Level.SEVERE, null, ex);
+            return new ResponseEntity<>("Error al obtener los planos del autor", HttpStatus.NOT_FOUND);
+        }
+    }
 }
 
