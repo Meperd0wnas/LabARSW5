@@ -40,3 +40,14 @@ lo probamos:
 
 ![alt text](./img/media/image6.png)
 ![alt text](./img/media/image7.png)
+
+### 6 
+
+creamos el nuevo endpoint:
+
+![alt text](./img/media/image8.png)
+
+lo probamos:
+
+![alt text](./img/media/image9.png)
+![alt text](image.png)
