@@ -2,6 +2,10 @@ package edu.eci.arsw.blueprints.model;
 
 import java.util.Objects;
 
+
+
+
+
 public class Point {
    
     private int x;

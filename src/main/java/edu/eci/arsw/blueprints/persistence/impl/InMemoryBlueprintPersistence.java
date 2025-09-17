@@ -33,7 +33,7 @@ public class InMemoryBlueprintPersistence implements BlueprintsPersistence {
 
         // Crear planos
         Blueprint bp1 = new Blueprint("daniel", "casa1", points1);
-        Blueprint bp2 = new Blueprint("daniel", "casa2", points2); // autor repetido
+        Blueprint bp2 = new Blueprint("daniel", "casa2", points2); //autor repetido
         Blueprint bp3 = new Blueprint("maria", "jardin", points3);
         Blueprint bp4 = new Blueprint("carlos", "edificio", points4);
 
