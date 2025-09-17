@@ -1,12 +1,11 @@
-package edu.eci.arsw.blueprints.persistence.impl;
+package edu.eci.arsw.blueprints.model;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.eci.arsw.blueprints.model.Blueprint;
-import edu.eci.arsw.blueprints.model.BlueprintFilter;
-import edu.eci.arsw.blueprints.model.Point;
+import org.springframework.stereotype.Component;
 
+@Component
 public class RedundancyFilter implements BlueprintFilter {
 
     @Override
