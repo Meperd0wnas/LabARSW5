@@ -59,3 +59,15 @@ lo probamos:
 adicionamos el POST
 
 ![alt text](./img/media/image11.png)
+
+#### 2
+
+probamos desde la consola:
+
+![alt text](./img/media/image12.png)
+
+#### 3
+
+verificamos que haya quedado reguistrado con un GET
+
+![alt text](./img/media/image13.png)
