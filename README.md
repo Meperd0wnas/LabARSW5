@@ -50,4 +50,4 @@ creamos el nuevo endpoint:
 lo probamos:
 
 ![alt text](./img/media/image9.png)
-![alt text](image.png)
+![alt text](./img/media/image10.png)
