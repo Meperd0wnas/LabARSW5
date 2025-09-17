@@ -51,3 +51,5 @@ lo probamos:
 
 ![alt text](./img/media/image9.png)
 ![alt text](./img/media/image10.png)
+
+### Parte II
