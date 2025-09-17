@@ -6,9 +6,9 @@
 
 #### 1
 
-Integración del proyecto base suministrado sin archivos de configuración
+Integración del proyecto base suministrado sin archivos de configuración (reorganice algunas clases respecto al lab anterior)
 
-![alt text](./img/media/image.png)
+![alt text](./img/media/image.png) 
 
 #### 2
 
