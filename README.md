@@ -71,3 +71,8 @@ probamos desde la consola:
 verificamos que haya quedado reguistrado con un GET
 
 ![alt text](./img/media/image13.png)
+
+#### 4 
+
+agregamos el put para actualizar planos (agregamos los metodos necesarios en el servicio y la persistencia )
+![alt text](./img/media/image14.png)
