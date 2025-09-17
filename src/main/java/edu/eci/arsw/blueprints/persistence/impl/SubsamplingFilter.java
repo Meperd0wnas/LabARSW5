@@ -1,11 +1,11 @@
-package edu.eci.arsw.persistence.impl;
+package edu.eci.arsw.blueprints.persistence.impl;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.eci.arsw.model.Blueprint;
-import edu.eci.arsw.model.BlueprintFilter;
-import edu.eci.arsw.model.Point;
+import edu.eci.arsw.blueprints.model.Blueprint;
+import edu.eci.arsw.blueprints.model.BlueprintFilter;
+import edu.eci.arsw.blueprints.model.Point;
 
 public class SubsamplingFilter implements BlueprintFilter {
 
