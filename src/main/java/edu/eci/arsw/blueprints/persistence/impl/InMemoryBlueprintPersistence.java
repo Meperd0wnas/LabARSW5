@@ -83,10 +83,9 @@ public class InMemoryBlueprintPersistence implements BlueprintsPersistence {
     }
 
     @Override
-    public void updateBlueprint(String author, String name, Blueprint nuevo) throws BlueprintNotFoundException {
+    public void updateBlueprint(String author, String name, Blueprint nuevo) {
         Tuple<String, String> key = new Tuple<>(author, name);
         if (!blueprints.containsKey(key)) {
-            throw new BlueprintNotFoundException("No existe el plano con autor " + author + " y nombre " + name);
         }
         blueprints.put(key, nuevo);
     }
