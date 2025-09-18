@@ -81,8 +81,11 @@ agregamos el put para actualizar planos (agregamos los metodos necesarios en el 
  
  ### Parte III
 
- ¿Qué condiciones de carrera se podrían presentar?
+¿Qué condiciones de carrera se podrían presentar?
 
  Se pueden presentar conflictos cuando varios hilos escriben al mismo tiempo en el HashMap, ya que no es seguro para concurrencia. Esto puede causar corrupción de datos, lecturas inconsistentes durante escrituras y pérdida de actualizaciones si dos hilos insertan o modifican el mismo plano simultáneamente.
+
+
+Regiones críticas
 
  Las regiones críticas son todos los accesos al HashMap: operaciones como put, get, containsKey y keySet. En especial, los bloques donde se hace una verificación (containsKey) seguida de una escritura (put), ya que no son atómicos y permiten condiciones de carrera.

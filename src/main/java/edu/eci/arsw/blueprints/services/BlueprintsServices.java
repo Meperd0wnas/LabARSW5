@@ -44,6 +44,11 @@ public class BlueprintsServices {
                   .map(filter::applyFilter)
                   .collect(Collectors.toSet());
     }
+
+        public void updateBlueprint(String author, String name, Blueprint nuevo) throws BlueprintNotFoundException {
+        bpp.updateBlueprint(author, name, nuevo);
+    }
+
 }
 
 
