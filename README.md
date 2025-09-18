@@ -89,3 +89,10 @@ agregamos el put para actualizar planos (agregamos los metodos necesarios en el 
 Regiones críticas
 
  Las regiones críticas son todos los accesos al HashMap: operaciones como put, get, containsKey y keySet. En especial, los bloques donde se hace una verificación (containsKey) seguida de una escritura (put), ya que no son atómicos y permiten condiciones de carrera.
+
+Solucion:
+
+Se reemplazó la estructura HashMap por un ConcurrentHashMap en la clase InMemoryBlueprintPersistence para garantizar la seguridad en entornos concurrentes. Además, se modificaron las operaciones críticas: en saveBlueprint se usa putIfAbsent para evitar la condición de carrera “check-then-put”, y en updateBlueprint se emplea replace para asegurar que solo se actualicen planos existentes. Con estos ajustes se eliminan las posibles condiciones de carrera sin necesidad de sincronización global, manteniendo un buen rendimiento en el acceso concurrente.
+
+![alt text](./img/media/image15.png)
+
